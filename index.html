@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=1024, user-scalable=no">
+
+		<title>Unit Test: Um preço pequeno a pagar por noites de sono tranquilas</title>
+
+		<!-- Required stylesheet -->
+		<link rel="stylesheet" media="screen" href="core/deck.core.css">
+
+		<!-- Extension CSS files go here. Remove or add as needed. -->
+		<link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+		<link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+		<link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+		<link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+		<link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+
+		<!-- Style theme. More available in /themes/style/ or create your own. -->
+		<link rel="stylesheet" media="screen" href="themes/style/neon.css">
+
+		<!-- Transition theme. More available in /themes/transition/ or create your own. -->
+		<link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+
+		<!-- Basic black and white print styles -->
+		<link rel="stylesheet" media="print" href="core/print.css">
+
+
+		<!-- Required Modernizr file -->
+		<script src="modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="deck-container">
+			<section class="slide">
+				<img src="assets/logo.png" width="768" height="768" alt="Entre Devs Frontend">
+			</section>
+
+			<section class="slide">
+				<img src="assets/josielrocha.jpg" width="468" height="468" alt="Josiel Rocha">
+				<pre><code>
+- Josiel Rocha (jcrocha)
+- Engenheiro de Software Frontend
+- Há pouco mais de 05 anos no grupo UOL
+- Já passei pelo Painel do Cliente UOL Diveo e Rádio UOL
+- Trabalhando atualmente com uma galera top no PagSeguro
+- VIm User e Firefox Lover confesso
+				</code></pre>
+			</section>
+
+			<section class="slide">
+				<h2>Agenda</h2>
+				<pre><code>
+1. Tipos de teste
+2. Por que testar?
+3. Quem pode/deve escrever testes unitários
+4. Tá legal mas cadê o código
+5. Perguntas
+				</code></pre>
+			</section>
+
+			<section class="slide">
+				<h2>Tipos de teste</h2>
+				<pre><code>
+- Teste de Integração
+- Teste de Segurança
+- Teste de Unidade
+- Teste de Performance
+- Teste de Regressão
+
+E a lista continua...
+				</code></pre>
+			</section>
+
+			<section class="slide">
+				<h2>Por que testar</h2>
+				<h3>Teste bem escrito é igual:</h3>
+				<pre><code>
+- Documentação viva
+	+ Já quebrou algo que ninguém sabia que existia?
+
+- Sem surpresas
+	+ Os cenários previstos estão cobertos
+
+- Produtividade e Confiança
+	+ Não há medo de alterar um código antigo ou de outra pessoa
+				</code></pre>
+			</section>
+
+			<section class="slide">
+				<h2>Mitos</h2>
+				<img src="assets/myths.gif" width="1328" height="605" alt="Boring, Time Consuming, Tedious, Mistakes, Errors" style="background: #fff;">
+			</section>
+
+			<section class="slide">
+				<h2>Mito: Complexo, Difícil</h2>
+				<div class="slide">
+					<blockquote>
+						<cite>
+							Difícil é ter medo de alterar o código e ter pesadelos por causa da mudança
+						</cite>
+					</blockquote>
+				</div>
+				<div class="slide">
+					<img src="assets/complex.gif" width="500" height="500" alt="Complexo">
+				</div>
+			</section>
+
+			<section class="slide">
+				<h2>Mito: Tem teste de unidade, não vai quebrar de forma alguma</h2>
+				<div class="slide">
+					<blockquote>
+						<cite>
+							O teste garante que você escreveu certo e não que você escreveu a coisa certa
+						</cite>
+					</blockquote>
+				</div>
+				<div class="slide">
+					<img src="assets/integration-versus-unit.gif" width="480" height="264" alt="Testes de Integração versus Testes Unitários">
+				</div>
+			</section>
+
+			<section class="slide">
+				<h2>Quem pode/deve escrever testes unitários?</h2>
+				<div class="slide">
+					<img src="assets/tio-sam.png" width="426" height="480" alt="Tio Sam">
+				</div>
+			</section>
+
+			<section class="slide">
+				<h2>Tá legal mas cadê o código</h2>
+				<video src="assets/show-me-the-code.mp4" autoplay loop>
+			</section>
+
+			<section class="slide">
+				<h2>Perguntas?</h2>
+			</section>
+
+			<!-- End slides. -->
+
+			<!-- Begin extension snippets. Add or remove as needed. -->
+
+			<!-- deck.navigation snippet -->
+			<div aria-role="navigation">
+				<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+				<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+			</div>
+
+			<!-- deck.status snippet -->
+			<p class="deck-status" aria-role="status">
+				<span class="deck-status-current"></span>
+				/
+				<span class="deck-status-total"></span>
+			</p>
+
+			<!-- deck.goto snippet -->
+			<form action="." method="get" class="goto-form">
+				<label for="goto-slide">Go to slide:</label>
+				<input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+				<datalist id="goto-datalist"></datalist>
+				<input type="submit" value="Go">
+			</form>
+
+			<!-- End extension snippets. -->
+		</div>
+
+		<!-- Required JS files. -->
+		<script src="jquery.min.js"></script>
+		<script src="core/deck.core.js"></script>
+
+		<!-- Extension JS files. Add or remove as needed. -->
+		<script src="extensions/menu/deck.menu.js"></script>
+		<script src="extensions/goto/deck.goto.js"></script>
+		<script src="extensions/status/deck.status.js"></script>
+		<script src="extensions/navigation/deck.navigation.js"></script>
+		<script src="extensions/scale/deck.scale.js"></script>
+
+		<!-- Initialize the deck. You can put this in an external file if desired. -->
+		<script>
+			$(function() {
+				$.deck('.slide');
+			});
+		</script>
+	</body>
+</html>
