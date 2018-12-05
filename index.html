@@ -18,7 +18,7 @@
 		<link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
 
 		<!-- Style theme. More available in /themes/style/ or create your own. -->
-		<link rel="stylesheet" media="screen" href="themes/style/neon.css">
+		<link rel="stylesheet" media="screen" href="themes/style/web-2.0.css">
 
 		<!-- Transition theme. More available in /themes/transition/ or create your own. -->
 		<link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
@@ -29,10 +29,18 @@
 
 		<!-- Required Modernizr file -->
 		<script src="modernizr.custom.js"></script>
+
+		<style type="text/css">
+			.slide {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="deck-container">
-			<section class="slide" style="display: flex; align-items: center; justify-content: center;">
+			<section class="slide">
 				<img src="assets/logo.png" width="571" height="227" alt="Entre Devs Frontend">
 			</section>
 
@@ -54,7 +62,7 @@
 1. Tipos de teste
 2. Por que testar?
 3. Quem pode/deve escrever testes unitários
-4. Tá legal mas cadê o código
+4. Tá legal, mas cadê o código
 5. Perguntas
 				</code></pre>
 			</section>
@@ -73,8 +81,8 @@ E a lista continua...
 			</section>
 
 			<section class="slide">
-				<h2>Por que testar</h2>
-				<h3>Teste bem escrito é igual:</h3>
+				<h2>Por que testar?</h2>
+				<h3>Teste bem escrito é:</h3>
 				<pre><code>
 - Documentação viva
 	+ Já quebrou algo que ninguém sabia que existia?
@@ -107,7 +115,7 @@ E a lista continua...
 			</section>
 
 			<section class="slide">
-				<h2>Mito: Tem teste de unidade, não vai quebrar de forma alguma</h2>
+				<h2>Mito: Código com teste não quebra</h2>
 				<div class="slide">
 					<blockquote>
 						<cite>
@@ -123,13 +131,13 @@ E a lista continua...
 			<section class="slide">
 				<h2>Quem pode/deve escrever testes unitários?</h2>
 				<div class="slide">
-					<img src="assets/tio-sam.png" width="426" height="480" alt="Tio Sam">
+					<img src="assets/tio-sam.gif" width="500" height="252" alt="Tio Sam">
 				</div>
 			</section>
 
 			<section class="slide">
-				<h2>Tá legal mas cadê o código</h2>
-				<video src="assets/show-me-the-code.mp4" autoplay loop>
+				<h2>Tá legal, mas cadê o código</h2>
+				<img src="assets/show-me-the-code.gif" width="480" height="354" alt="Show me the code">
 			</section>
 
 			<section class="slide">
