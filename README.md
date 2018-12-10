@@ -8,19 +8,19 @@ Visualizando o código no browser
 
 ### Usando Python 2
 ```
-cd entredevs-code
+cd entredevs-presentation
 python -m http.server 9000
 ```
 
 ### Usando Python 3
 ```
-cd entredevs-code
+cd entredevs-presentation
 python -m SimpleHTTPServer 9000
 ```
 
 ### Usando PHP 5.4 +
 ```
-cd entredevs-code
+cd entredevs-presentation
 php -S localhost:9000
 ```
 
